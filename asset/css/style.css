@@ -1,0 +1,134 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+/* font-family: 'Space Grotesk', sans-serif; */
+/* font-family: 'Space Grotesk', sans-serif; */
+/* .background{
+    background-color: #eceff8; 
+    height: 100vh;
+} */
+.theme-font{
+    color: rgb(197,49,64) !important;
+}
+.bk-clr{
+    color: rgb(78, 75, 75) !important;
+}
+.covidbg-img{
+    position: absolute;
+    left: -130px;
+    top: 50px;
+    width: 250px;
+}
+.covidbg-img img{
+    animation: prespin 15s infinite linear;
+}
+@keyframes prespin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.float-img{
+    animation: float 2s infinite ease-in-out;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+input{
+    border: 1px solid rgb(197,49,64);
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #FDECEE;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: rgb(197,49,64);
+}
+input:focus{
+    outline: 1px solid rgb(197,49,64);
+}
+#special{
+    border-radius: 30px !important;
+    padding: 10px 20px;
+    border: 1px solid rgb(197,49,64);
+    background-color: white;
+    color: rgb(197,49,64);
+    transition: all 0.5s ease;
+}
+#special:active{
+    transform: translateX(5px);
+    transition: all 0.5s ease;
+}
+input::placeholder{
+    color: rgb(117, 95, 95);
+    letter-spacing: 1px;
+}
+.digit{
+    font-size: 35px;
+}
+.bg-small{
+    position: relative;
+    border-radius: 20px !important;
+}
+.img-2 img{
+    width: 100px;
+    animation: prespin 15s infinite linear;
+}
+.img-2{
+    position: absolute;
+    z-index: 1;
+    right : -40px;
+}
+.img-3 img{
+    width: 50px;
+    animation: represpin 15s infinite linear;
+}
+@keyframes represpin {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.img-3{
+    position: absolute;
+    z-index: 1;
+    bottom : -30px;
+    left: 300px;
+}
+#suggestion-list{
+    position: absolute;
+    top: 70px;
+    left: 132px;
+    background-color: #FDECEE;
+    border: 1px solid rgb(197,49,64);
+    border-radius: 10px;
+    padding: 0px 10px !important;
+    width: 280px;
+    display: none;
+}
+#suggestion-list li{
+    text-align: left;
+    padding: 5px 0px !important;
+    transition: all 0.5s ease;
+    font-weight: bold;
+}
+#suggestion-list li:hover{
+    color: rgb(197,49,64);
+    cursor: pointer;
+    transform: translateX(5px);
+    transition: all 0.5s ease;
+    font-weight: bold;
+}
+#error{
+    display: none;
+}

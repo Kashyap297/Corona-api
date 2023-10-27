@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona API</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Space+Grotesk&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css" class="rel">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<body class="bg-light">
+    <div class="background m-0">
+        <div class="header py-3">
+            <h2 class="theme-font text-center">Covid-19 API By Using JavaScript</h2>
+        </div>
+        <div class="main position-relative p-2 ">
+            <div class="covidbg-img">
+                <img src="asset/images/shape__white1.png" alt="" class="bg-covid w-100">
+            </div>
+            <div class="container py-5">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-6">
+                        <div class="content text-center">
+                            <h2 class="fw-bold bk-clr">Current Covid-19 Status Of India</h2>
+                            <div class="input-section py-3 position-relative text-center">
+                                <form action="" id="form">
+                                    <input type="text" class="fw-bold" autocomplete="off" placeholder="Enter State" id="inputdata" onkeyup="suggestionsList()">
+                                    <button class="fw-bold ms-2" id="special">Submit</button>
+                                </form>
+                                <div class="text-danger text-center fw-bold mt-2" id="error">
+                                    Wrong Input*
+                                </div>
+                                <ul id="suggestion-list">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="main-img text-center">
+                            <img src="asset/images/symptoms.png" alt="" class="float-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-5 bg-white shadow-lg bg-small" id="detail">
+                    <div class="img-2">
+                        <img src="asset/images/v-1.png" alt="" class="img-bg">
+                    </div>
+                    <div class="img-3">
+                        <img src="asset/images/v-2.png" alt="" class="img-bg">
+                    </div>
+                    <h2 class="bk-clr fw-bold text-center pb-4">India : <span id="state">  </span></h2>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="bg-white p-5">
+                                <h2 class="text-center digit fw-bold text-info" id="confirm"></h2>
+                                <p class="text-center fw-bold bk-clr mt-3 fs-6">Confirm Cases</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="bg-white border-0 border-start p-5">
+                                <h2 class="text-center digit fw-bold text-warning" id="active"></h2>
+                                <p class="text-center fw-bold bk-clr mt-3 fs-6">Active Cases</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="bg-white border-0 border-start p-5">
+                                <h2 class="text-center digit fw-bold theme-font" id="death"></h2>
+                                <p class="text-center fw-bold bk-clr mt-3 fs-6">Total Death</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="bg-white border-0 border-start p-5">
+                                <h2 class="text-center digit fw-bold text-success" id="recovered"></h2>
+                                <p class="text-center fw-bold bk-clr mt-3 fs-6">Recovered Cases</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="asset/js/jquery-3.6.3.min.js"></script>
+<script src="asset/js/main.js"></script>
+
+</html>
